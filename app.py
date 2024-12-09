@@ -45,25 +45,25 @@ def callback():
 def handle_message(event):
     message = text=event.message.text
 
-    stickers = [
-        {"package_id": "8522", "sticker_id": "16581266"},
-        {"package_id": "8522", "sticker_id": "16581267"},
-        {"package_id": "8522", "sticker_id": "16581268"},
-        {"package_id": "8522", "sticker_id": "16581269"},
-        {"package_id": "8522", "sticker_id": "16581270"},
-    ]
+    # # stickers = [
+    #     {"package_id": "8522", "sticker_id": "16581266"},
+    #     {"package_id": "8522", "sticker_id": "16581267"},
+    #     {"package_id": "8522", "sticker_id": "16581268"},
+    #     {"package_id": "8522", "sticker_id": "16581269"},
+    #     {"package_id": "8522", "sticker_id": "16581270"},
+    # ]
 
-    if event.message.text:
-        # 隨機選擇一個貼圖
-        sticker = random.choice(stickers)
-        sticker_message = StickerSendMessage(
-            package_id=sticker["package_id"],
-            sticker_id=sticker["sticker_id"]
-        )
-        line_bot_api.reply_message(event.reply_token, sticker_message)
-    else:
-        reply_text = '很抱歉，我目前無法理解這個內容。'
-        line_bot_api.reply_message(event.reply_token, TextSendMessage(reply_text))
+    # if event.message.text:
+    #     # 隨機選擇一個貼圖
+    #     sticker = random.choice(stickers)
+    #     sticker_message = StickerSendMessage(
+    #         package_id=sticker["package_id"],
+    #         sticker_id=sticker["sticker_id"]
+    #     )
+    #     line_bot_api.reply_message(event.reply_token, sticker_message)
+    # else:
+    #     reply_text = '很抱歉，我目前無法理解這個內容。'
+    #     line_bot_api.reply_message(event.reply_token, TextSendMessage(reply_text))
 
    
    
