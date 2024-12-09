@@ -15,9 +15,9 @@ import random
 app = Flask(__name__)
 
 # 必須放上自己的Channel Access Token
-line_bot_api = LineBotApi('wvdgugGq+zaBg3f3hJL+Tsjg/TxkBxYnrfm0w/cEXS7LEUK0uNH+eeNwOx8mC55udDvcBp6Iy+6PA3CUILWH4D6O8DhmMDe/cdio/MS9Kio+5ovLnHM7w0wNek7dL0e0nZpLgM4X+LVlrgMZvXEgmgdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('5pS4FSfUbDn6i6TUyk75AMfBGpSAtq6ps77N3DuQVKfLLGEKGI3ZD33kHkjx00F4B6vNmTrdlq90YkzDi4p9fDPBmQAFsHKRJTr9b7fcmFMjFRUCiDeLDYn3XrbAWtexVYE1QfHEm9gYj5XnFsQiRAdB04t89/1O/w1cDnyilFU=')
 # 必須放上自己的Channel Secret
-handler = WebhookHandler('97a38974ee2dad9c5f575f82ce28a7c0')
+handler = WebhookHandler('b0730c7195709ba21d012b70aecedca5')
 
 line_bot_api.push_message('U759b49ce9ec6234e18cf8d43c19cb7ea', TextSendMessage(text='您好,目前時間是 2024/10/10 14:00 ，請問需要什麼服務呢?'))
 
