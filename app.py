@@ -96,8 +96,8 @@ def handle_message(event):
 
     elif message == '今天是我的生日':
             image_message = ImageSendMessage(
-            original_content_url='https://drive.google.com/file/d/1gvVZB4XsSYK8pgAZhu9_hWzARZVbvn8B/view?usp=sharing',  # 替換為實際的圖片網址
-            preview_image_url='https://drive.google.com/file/d/1gvVZB4XsSYK8pgAZhu9_hWzARZVbvn8B/view?usp=sharing'  # 替換為實際的預覽圖片網址
+            original_content_url='https://m.media-amazon.com/images/I/61ng2j21WnS.jpg',  # 替換為實際的圖片網址
+            preview_image_url='https://m.media-amazon.com/images/I/61ng2j21WnS.jpg'  # 替換為實際的預覽圖片網址
         )
             text_message = TextSendMessage(text='祝你事事順利，生日快樂!')
             line_bot_api.reply_message(event.reply_token, [image_message, text_message])
